@@ -578,11 +578,14 @@ margin-bottom: 72px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.portfolio-link:is(:hover, :focus) {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16),
+      0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .portfolio-link:is(:hover, :focus) .overlay {
   transform: translateY(0%);
-  box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-item-title {
@@ -686,10 +689,6 @@ margin-bottom: 72px;
 .close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* .close-icon:hover,
-.close-icon:focus {
-  fill: var(--primary-background-color); */
 
 .is-hidden {
   opacity: 0;
